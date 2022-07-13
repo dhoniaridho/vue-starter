@@ -17,14 +17,8 @@ export default defineConfig({
     }),
     vueJsx(),
     Pages({
-      exclude: [
-        '**/components/*.vue',
-        '**/models/*.ts',
-        '**/repositories/*.ts',
-      ],
-      extendRoute(route, parent) {
-        return route
-      },
+      extensions: ['vue'],
+      exclude: ['**/components/**/*'],
     }),
     AutoImport({
       include: [
@@ -42,7 +36,7 @@ export default defineConfig({
         '@vueuse/core',
       ],
       dts: 'src/auto-imports.d.ts',
-      dirs: ['src/composables', 'src/store'],
+      dirs: ['src/composables', 'src/stores'],
       vueTemplate: true,
       eslintrc: {
         enabled: true,

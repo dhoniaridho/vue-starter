@@ -1,7 +1,7 @@
 <script setup lang="ts">
-  import Counter from './component/counter.vue'
   import { useMutation, useQuery } from 'vue-query'
   import TodoRepository from './repositories/todo.repositories'
+  import Counter from './components/counter'
 
   // Fetch todos from the server
   const {

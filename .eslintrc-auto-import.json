@@ -120,6 +120,7 @@
     "useColorMode": true,
     "useConfirmDialog": true,
     "useCounter": true,
+    "useCounterStore": true,
     "useCssModule": true,
     "useCssVar": true,
     "useCssVars": true,
