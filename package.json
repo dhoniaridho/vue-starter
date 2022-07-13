@@ -4,13 +4,14 @@
   "scripts": {
     "dev": "vite",
     "build": "run-p type-check build-only",
-    "preview": "vite preview --port 4173",
+    "preview": "vite preview --port 3333",
     "test:unit": "vitest --environment jsdom",
-    "test:e2e": "start-server-and-test preview http://127.0.0.1:4173/ 'cypress open --e2e'",
-    "test:e2e:ci": "start-server-and-test preview http://127.0.0.1:4173/ 'cypress run --e2e'",
+    "test:e2e": "start-server-and-test preview http://127.0.0.1:3333/ 'cypress open --e2e'",
+    "test:e2e:ci": "start-server-and-test preview http://127.0.0.1:3333/ 'cypress run --e2e'",
     "build-only": "vite build",
     "type-check": "vue-tsc --noEmit -p tsconfig.vitest.json --composite false",
-    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore"
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@vue/compiler-sfc": "^3.2.37",
@@ -48,6 +49,7 @@
     "vite-plugin-pages": "^0.25.0",
     "vite-plugin-svg-icons": "^2.0.1",
     "vitest": "^0.15.1",
-    "vue-tsc": "^0.38.1"
+    "vue-tsc": "^0.38.1",
+    "husky": "^8.0.0"
   }
 }
