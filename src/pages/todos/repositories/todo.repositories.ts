@@ -15,6 +15,12 @@ const TodoRepository = {
     )
     return response
   },
+  async deleteOne(id: number) {
+    const { data: response } = await http.delete(
+      `https://jsonplaceholder.typicode.com/todos/${id}`
+    )
+    return response
+  },
 }
 
 export default TodoRepository

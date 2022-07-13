@@ -22,6 +22,9 @@ export default defineConfig({
         '**/models/*.ts',
         '**/repositories/*.ts',
       ],
+      extendRoute(route, parent) {
+        return route
+      },
     }),
     AutoImport({
       include: [

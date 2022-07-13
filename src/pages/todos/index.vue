@@ -1,23 +1,48 @@
 <script setup lang="ts">
   import Counter from './component/counter.vue'
-  import { useQuery } from 'vue-query'
+  import { useMutation, useQuery } from 'vue-query'
   import TodoRepository from './repositories/todo.repositories'
 
-  const { data, isLoading, isError } = useQuery('todos', TodoRepository.getAll)
+  // Fetch todos from the server
+  const {
+    data: todos,
+    isLoading: isLoadingTodos,
+    isError: isErrorTodos,
+  } = useQuery('todos', TodoRepository.getAll)
+
+  // Mutate todos
+  const { mutate } = useMutation(
+    (id: number) => {
+      return TodoRepository.deleteOne(id)
+    },
+    {
+      onSuccess: () => {
+        console.log('success')
+      },
+      onError: () => {
+        console.log('error')
+      },
+    }
+  )
+
+  const onDelete = (id: number) => {
+    mutate(id)
+  }
 </script>
 
 <template>
   <Counter />
   <div>This List Todo</div>
-  <div v-if="isLoading">
+  <div v-if="isLoadingTodos">
     <div>Loading...</div>
   </div>
-  <div v-else-if="isError">
+  <div v-else-if="isErrorTodos">
     <div>An error occured</div>
   </div>
   <ul v-else style="height: 200px; overflow: auto">
-    <li v-for="item in data" :key="item.id">
-      <RouterLink :to="`todos/${item.id}`">{{ item.title }}</RouterLink>
+    <li v-for="todo in todos" :key="todo.id">
+      <RouterLink :to="`todos/${todo.id}`">{{ todo.title }}</RouterLink>
+      <button @click="onDelete(todo.id)">delete</button>
     </li>
   </ul>
 </template>
