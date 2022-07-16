@@ -36,7 +36,7 @@ export default defineConfig({
         '@vueuse/core',
       ],
       dts: 'src/auto-imports.d.ts',
-      dirs: ['src/composables', 'src/stores'],
+      dirs: ['src/composables', 'src/stores', 'src/modules'],
       vueTemplate: true,
       eslintrc: {
         enabled: true,

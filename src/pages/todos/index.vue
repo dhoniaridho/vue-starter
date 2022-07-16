@@ -1,7 +1,7 @@
 <script setup lang="ts">
   import { useMutation, useQuery } from 'vue-query'
-  import TodoRepository from './repositories/todo.repositories'
-  import Counter from './components/counter'
+  import TodoRepository from '@/app/todos/repositories/todo.repository'
+  import Counter from '@/app/todos/components/counter'
 
   // Fetch todos from the server
   const {
@@ -28,6 +28,10 @@
   const onDelete = (id: number) => {
     mutate(id)
   }
+
+  useHead({
+    title: 'Todos',
+  })
 </script>
 
 <template>

@@ -13,6 +13,6 @@
   ],
   "compilerOptions": {
     "types": ["@intlify/vite-plugin-vue-i18n/client"],
-    "baseUrl": ".",
+    "baseUrl": "."
   }
 }
