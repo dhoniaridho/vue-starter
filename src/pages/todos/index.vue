@@ -1,7 +1,7 @@
 <script setup lang="ts">
   import { useMutation, useQuery } from 'vue-query'
-  import TodoRepository from '@/app/todos/repositories/todo.repository'
-  import Counter from '@/app/todos/components/counter'
+  import TodoRepository from '@features/todos/repositories/todo.repository'
+  import Counter from '@features/todos/components/counter'
 
   // Fetch todos from the server
   const {

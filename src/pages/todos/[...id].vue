@@ -1,6 +1,6 @@
 <script setup lang="ts">
   import { useQuery } from 'vue-query'
-  import TodoRepository from '@/app/todos/repositories/todo.repository'
+  import TodoRepository from '@features/todos/repositories/todo.repository'
 
   const route = useRoute()
 
