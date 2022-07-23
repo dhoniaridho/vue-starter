@@ -1,7 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@intlify/vite-plugin-vue-i18n': 5.0.0
+  '@intlify/vite-plugin-vue-i18n': 5.0.1
   '@rushstack/eslint-patch': ^1.1.0
   '@types/jsdom': ^16.2.14
   '@types/node': ^16.11.41
@@ -53,7 +53,7 @@ dependencies:
   vue-router: 4.1.2_vue@3.2.37
 
 devDependencies:
-  '@intlify/vite-plugin-vue-i18n': 5.0.0_vite@3.0.2+vue-i18n@9.1.10
+  '@intlify/vite-plugin-vue-i18n': 5.0.1_vite@3.0.2+vue-i18n@9.1.10
   '@rushstack/eslint-patch': 1.1.4
   '@types/jsdom': 16.2.14
   '@types/node': 16.11.43
@@ -543,8 +543,8 @@ packages:
     engines: {node: '>= 14'}
     dev: true
 
-  /@intlify/vite-plugin-vue-i18n/5.0.0_vite@3.0.2+vue-i18n@9.1.10:
-    resolution: {integrity: sha512-49W7y2b0m6Cg6qGoBkjdNgxyzFx3iOSbnxvDaWcN65raaceJVuwCwxXX1SqJbjHTg32rpTFi4jSlroqAV9Rr0w==}
+  /@intlify/vite-plugin-vue-i18n/5.0.1_vite@3.0.2+vue-i18n@9.1.10:
+    resolution: {integrity: sha512-+LAUdm5PxGtLrUYgD2Wg9SINmLmhZqrcTnzccfqopca5NvaXWOPnQR4cQOkn82qLuyjWdCYC1BoqMHWBWX/MyQ==}
     engines: {node: '>= 14.6'}
     peerDependencies:
       petite-vue-i18n: '*'
