@@ -52,7 +52,7 @@
     "vite": "^3.0.2",
     "vite-plugin-pages": "^0.25.0",
     "vite-plugin-svg-icons": "^2.0.1",
-    "vitest": "0.21.1",
+    "vitest": "0.22.0",
     "vue-tsc": "0.40.1"
   }
 }
