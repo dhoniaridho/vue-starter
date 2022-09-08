@@ -14,13 +14,13 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "@vue/compiler-sfc": "3.2.37",
+    "@vue/compiler-sfc": "3.2.39",
     "@vueuse/core": "9.1.1",
     "@vueuse/head": "0.7.9",
     "axios": "0.27.2",
     "nprogress": "0.2.0",
     "pinia": "2.0.22",
-    "vue": "3.2.37",
+    "vue": "3.2.39",
     "vue-i18n": "9.2.2",
     "vue-query": "1.26.0",
     "vue-router": "4.1.5"
