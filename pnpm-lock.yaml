@@ -16,7 +16,7 @@ specifiers:
   '@vueuse/core': 9.1.1
   '@vueuse/head': 0.7.10
   axios: 0.27.2
-  cypress: 10.7.0
+  cypress: 10.8.0
   eslint: 8.23.0
   eslint-plugin-cypress: 2.12.1
   eslint-plugin-vue: 9.4.0
@@ -64,7 +64,7 @@ devDependencies:
   '@vue/eslint-config-typescript': 11.0.0_clj75o2dfe6uuchpmzgmmzcyca
   '@vue/test-utils': 2.0.2_vue@3.2.39
   '@vue/tsconfig': 0.1.3_@types+node@16.11.56
-  cypress: 10.7.0
+  cypress: 10.8.0
   eslint: 8.23.0
   eslint-plugin-cypress: 2.12.1_eslint@8.23.0
   eslint-plugin-vue: 9.4.0_eslint@8.23.0
@@ -1780,8 +1780,8 @@ packages:
   /csstype/2.6.20:
     resolution: {integrity: sha512-/WwNkdXfckNgw6S5R125rrW8ez139lBHWouiBvX8dfMFtcn6V81REDqnH7+CRpRipfYlyU1CmOnOxrmGcFOjeA==}
 
-  /cypress/10.7.0:
-    resolution: {integrity: sha512-gTFvjrUoBnqPPOu9Vl5SBHuFlzx/Wxg/ZXIz2H4lzoOLFelKeF7mbwYUOzgzgF0oieU2WhJAestQdkgwJMMTvQ==}
+  /cypress/10.8.0:
+    resolution: {integrity: sha512-QVse0dnLm018hgti2enKMVZR9qbIO488YGX06nH5j3Dg1isL38DwrBtyrax02CANU6y8F4EJUuyW6HJKw1jsFA==}
     engines: {node: '>=12.0.0'}
     hasBin: true
     requiresBuild: true
@@ -1805,7 +1805,7 @@ packages:
       dayjs: 1.11.3
       debug: 4.3.4_supports-color@8.1.1
       enquirer: 2.3.6
-      eventemitter2: 6.4.6
+      eventemitter2: 6.4.7
       execa: 4.1.0
       executable: 4.1.1
       extract-zip: 2.0.1_supports-color@8.1.1
@@ -2646,8 +2646,8 @@ packages:
       through: 2.3.8
     dev: true
 
-  /eventemitter2/6.4.6:
-    resolution: {integrity: sha512-OHqo4wbHX5VbvlbB6o6eDwhYmiTjrpWACjF8Pmof/GTD6rdBNdZFNck3xlhqOiQFGCOoq3uzHvA0cQpFHIGVAQ==}
+  /eventemitter2/6.4.7:
+    resolution: {integrity: sha512-tYUSVOGeQPKt/eC1ABfhHy5Xd96N3oIijJvN3O9+TsC28T5V9yX9oEfEK5faP0EFSNVOG97qtAS68GBrQB2hDg==}
     dev: true
 
   /execa/4.1.0:
