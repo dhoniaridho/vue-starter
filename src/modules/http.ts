@@ -8,8 +8,9 @@ const http = axios.create({
     'Content-Type': 'application/json',
   },
 })
-
-export const install = (app: App) => {
+const install = (app: App) => {
   app.provide('http', http)
 }
-export default http
+
+export { http }
+export default install

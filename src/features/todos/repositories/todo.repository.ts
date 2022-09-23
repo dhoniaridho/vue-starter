@@ -1,4 +1,4 @@
-import http from '@/modules/http'
+import { http } from '~/modules/http'
 import type { ComputedRef } from 'vue'
 import type Todo from '../models/todo'
 

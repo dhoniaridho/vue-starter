@@ -8,6 +8,9 @@ import AutoImport from 'unplugin-auto-import/vite'
 import { createSvgIconsPlugin } from 'vite-plugin-svg-icons'
 import VueI18n from '@intlify/vite-plugin-vue-i18n'
 import path, { resolve } from 'path'
+import Components from 'unplugin-vue-components/vite'
+import Layouts from 'vite-plugin-vue-layouts'
+import { VitePWA } from 'vite-plugin-pwa'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -35,8 +38,7 @@ export default defineConfig({
         '@vueuse/head',
         '@vueuse/core',
       ],
-      dts: 'src/auto-imports.d.ts',
-      dirs: ['src/composables', 'src/stores', 'src/modules'],
+      dirs: ['src/composables', 'src/stores'],
       vueTemplate: true,
       eslintrc: {
         enabled: true,
@@ -56,10 +58,16 @@ export default defineConfig({
        */
       customDomId: '__icons__',
     }),
+    Components(),
+    Layouts({
+      layoutsDirs: 'src/layouts',
+      defaultLayout: 'default',
+    }),
+    VitePWA({ registerType: 'autoUpdate' }),
   ],
   resolve: {
     alias: {
-      '@': fileURLToPath(new URL('./src', import.meta.url)),
+      '~': fileURLToPath(new URL('./src', import.meta.url)),
       '@features': fileURLToPath(new URL('./src/features', import.meta.url)),
       '@components': fileURLToPath(
         new URL('./src/components', import.meta.url)

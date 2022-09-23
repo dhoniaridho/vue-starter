@@ -10,7 +10,7 @@ const messages = Object.fromEntries(
   })
 )
 
-export const install = (app: App) => {
+const install = (app: App) => {
   const i18n = createI18n({
     legacy: false,
     locale: 'en',
@@ -19,3 +19,5 @@ export const install = (app: App) => {
 
   app.use(i18n)
 }
+
+export default install

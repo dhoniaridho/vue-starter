@@ -1,9 +1,9 @@
 import type { App } from 'vue'
-import router from '@/router'
+import router from '~/router'
 import Nprogress from 'nprogress'
 import 'nprogress/nprogress.css'
 
-export const install = (app: App) => {
+const install = (app: App) => {
   router.beforeEach((to, from, next) => {
     if (to.matched.some((record) => record.meta.auth)) {
       if (localStorage.getItem('name')) {
@@ -20,8 +20,10 @@ export const install = (app: App) => {
     next()
   })
 
-  router.afterEach((to, from) => {
+  router.afterEach(() => {
     Nprogress.done()
   })
   app.use(router)
 }
+
+export default install
