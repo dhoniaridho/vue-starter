@@ -19,7 +19,7 @@ specifiers:
   cypress: 10.8.0
   eslint: 8.23.0
   eslint-plugin-cypress: 2.12.1
-  eslint-plugin-vue: 9.5.1
+  eslint-plugin-vue: 9.7.0
   husky: 8.0.1
   jsdom: 20.0.1
   npm-run-all: 4.1.5
@@ -64,13 +64,13 @@ devDependencies:
   '@vitejs/plugin-vue': 3.1.0_vite@3.1.0+vue@3.2.40
   '@vitejs/plugin-vue-jsx': 2.0.1_vite@3.1.0+vue@3.2.40
   '@vue/eslint-config-prettier': 7.0.0_bxpuzolsxufkw2ipnoyzzxnyrm
-  '@vue/eslint-config-typescript': 11.0.0_thlqer325mzceheyj3xxkdiaua
+  '@vue/eslint-config-typescript': 11.0.0_kyx4uk62yfb52raic4evgbu7ou
   '@vue/test-utils': 2.0.2_vue@3.2.40
   '@vue/tsconfig': 0.1.3_@types+node@16.11.59
   cypress: 10.8.0
   eslint: 8.23.0
   eslint-plugin-cypress: 2.12.1_eslint@8.23.0
-  eslint-plugin-vue: 9.5.1_eslint@8.23.0
+  eslint-plugin-vue: 9.7.0_eslint@8.23.0
   husky: 8.0.1
   jsdom: 20.0.1
   npm-run-all: 4.1.5
@@ -2008,7 +2008,7 @@ packages:
       prettier: 2.7.1
     dev: true
 
-  /@vue/eslint-config-typescript/11.0.0_thlqer325mzceheyj3xxkdiaua:
+  /@vue/eslint-config-typescript/11.0.0_kyx4uk62yfb52raic4evgbu7ou:
     resolution: {integrity: sha512-txuRzxnQVmtUvvy9UyWUy9sHWXNeRPGmSPqP53hRtaiUeCTAondI9Ho9GQYI/8/eWljYOST7iA4Aa8sANBkWaA==}
     engines: {node: ^14.17.0 || >=16.0.0}
     peerDependencies:
@@ -2022,7 +2022,7 @@ packages:
       '@typescript-eslint/eslint-plugin': 5.38.0_jq4xwqjhrxiijn5k23hrmwpezq
       '@typescript-eslint/parser': 5.38.0_itqs5654cmlnjraw6gjzqacppi
       eslint: 8.23.0
-      eslint-plugin-vue: 9.5.1_eslint@8.23.0
+      eslint-plugin-vue: 9.7.0_eslint@8.23.0
       typescript: 4.8.3
       vue-eslint-parser: 9.1.0_eslint@8.23.0
     transitivePeerDependencies:
@@ -3576,8 +3576,8 @@ packages:
       prettier-linter-helpers: 1.0.0
     dev: true
 
-  /eslint-plugin-vue/9.5.1_eslint@8.23.0:
-    resolution: {integrity: sha512-Y0sL2RY7Xc9S8kNih9lbwHIDmewUg9bfas6WSzsOWRgDXhIHKxRBZYNAnVcXBFfE+bMWHUA5GLChl7TcTYUI8w==}
+  /eslint-plugin-vue/9.7.0_eslint@8.23.0:
+    resolution: {integrity: sha512-DrOO3WZCZEwcLsnd3ohFwqCoipGRSTKTBTnLwdhqAbYZtzWl0o7D+D8ZhlmiZvABKTEl8AFsqH1GHGdybyoQmw==}
     engines: {node: ^14.17.0 || >=16.0.0}
     peerDependencies:
       eslint: ^6.2.0 || ^7.0.0 || ^8.0.0
