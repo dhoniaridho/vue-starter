@@ -10,7 +10,7 @@ specifiers:
   '@vitejs/plugin-vue-jsx': 2.0.1
   '@vue/compiler-sfc': 3.2.40
   '@vue/eslint-config-prettier': 7.0.0
-  '@vue/eslint-config-typescript': 11.0.0
+  '@vue/eslint-config-typescript': 11.0.2
   '@vue/test-utils': 2.0.2
   '@vue/tsconfig': 0.1.3
   '@vueuse/core': 9.2.0
@@ -64,7 +64,7 @@ devDependencies:
   '@vitejs/plugin-vue': 3.1.0_vite@3.1.0+vue@3.2.40
   '@vitejs/plugin-vue-jsx': 2.0.1_vite@3.1.0+vue@3.2.40
   '@vue/eslint-config-prettier': 7.0.0_bxpuzolsxufkw2ipnoyzzxnyrm
-  '@vue/eslint-config-typescript': 11.0.0_kyx4uk62yfb52raic4evgbu7ou
+  '@vue/eslint-config-typescript': 11.0.2_kyx4uk62yfb52raic4evgbu7ou
   '@vue/test-utils': 2.0.2_vue@3.2.40
   '@vue/tsconfig': 0.1.3_@types+node@16.11.59
   cypress: 10.11.0
@@ -2014,8 +2014,8 @@ packages:
       prettier: 2.7.1
     dev: true
 
-  /@vue/eslint-config-typescript/11.0.0_kyx4uk62yfb52raic4evgbu7ou:
-    resolution: {integrity: sha512-txuRzxnQVmtUvvy9UyWUy9sHWXNeRPGmSPqP53hRtaiUeCTAondI9Ho9GQYI/8/eWljYOST7iA4Aa8sANBkWaA==}
+  /@vue/eslint-config-typescript/11.0.2_kyx4uk62yfb52raic4evgbu7ou:
+    resolution: {integrity: sha512-EiKud1NqlWmSapBFkeSrE994qpKx7/27uCGnhdqzllYDpQZroyX/O6bwjEpeuyKamvLbsGdO6PMR2faIf+zFnw==}
     engines: {node: ^14.17.0 || >=16.0.0}
     peerDependencies:
       eslint: ^6.2.0 || ^7.0.0 || ^8.0.0
