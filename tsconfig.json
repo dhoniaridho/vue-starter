@@ -2,7 +2,7 @@
   "files": [],
   "references": [
     {
-      "path": "./tsconfig.config.json"
+      "path": "./tsconfig.node.json"
     },
     {
       "path": "./tsconfig.app.json"
@@ -12,7 +12,6 @@
     }
   ],
   "compilerOptions": {
-    "types": ["@intlify/vite-plugin-vue-i18n/client"],
-    "baseUrl": "."
+    "types": ["vite-plugin-vue-layouts/client"]
   }
 }

@@ -1,17 +1,17 @@
+import './assets/main.css'
+
 import { createApp } from 'vue'
-import 'virtual:svg-icons-register'
 
 import App from './App.vue'
 
 const app = createApp(App)
 
-const modules = import.meta.glob('./modules/*.ts', {
-  eager: true,
+const plugins = import.meta.glob('./plugins/*.ts', {
+  eager: true
 })
-Object.values(modules).forEach((module: any) => {
-  app.use((app) => {
-    return module?.default(app)
-  })
+
+Object.values(plugins).forEach((module: any) => {
+  app.use(module.default)
 })
 
 app.mount('#app')

@@ -1,4 +1,4 @@
-# vue-starter
+# laboratory
 
 This template should help get you started developing with Vue 3 in Vite.
 
@@ -24,36 +24,48 @@ See [Vite Configuration Reference](https://vitejs.dev/config/).
 ## Project Setup
 
 ```sh
-npm install
+pnpm install
 ```
 
 ### Compile and Hot-Reload for Development
 
 ```sh
-npm run dev
+pnpm dev
 ```
 
 ### Type-Check, Compile and Minify for Production
 
 ```sh
-npm run build
+pnpm build
 ```
 
 ### Run Unit Tests with [Vitest](https://vitest.dev/)
 
 ```sh
-npm run test:unit
+pnpm test:unit
 ```
 
-### Run End-to-End Tests with [Cypress](https://www.cypress.io/)
+### Run End-to-End Tests with [Playwright](https://playwright.dev)
 
 ```sh
-npm run build
-npm run test:e2e # or `npm run test:e2e:ci` for headless testing
+# Install browsers for the first run
+npx playwright install
+
+# When testing on CI, must build the project first
+pnpm build
+
+# Runs the end-to-end tests
+pnpm test:e2e
+# Runs the tests only on Chromium
+pnpm test:e2e --project=chromium
+# Runs the tests of a specific file
+pnpm test:e2e tests/example.spec.ts
+# Runs the tests in debug mode
+pnpm test:e2e --debug
 ```
 
 ### Lint with [ESLint](https://eslint.org/)
 
 ```sh
-npm run lint
+pnpm lint
 ```
