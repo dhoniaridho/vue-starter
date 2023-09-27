@@ -9,6 +9,11 @@ env:
   CR: 'ghcr.io'
   CR_USER: ${{ secrets.CR_USER }}
   CR_PAT: ${{ secrets.CR_PAT }}
+  GITHUB_REPO: ${{ github.repository }}
+  GITHUB_URL: ${{ github.server_url }}/${{ github.repository }}/actions/
+  GITHUB_ACTIONS_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+  IMAGE_NAME_RAW: 'ghcr.io/${{ github.repository }}:latest'
+  APP_NAME: ${{ github.event.repository.name }}
 
 jobs:
   build:
