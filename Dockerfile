@@ -13,10 +13,6 @@ ENV VITE_BASE_URL="{{ VITE_BASE_URL }}"
 
 RUN NODE_OPTIONS="--max-old-space-size=8192" pnpm build
 
-
-
-RUN pnpm run build
-
 FROM nginx
 RUN mkdir /home/dist/
 COPY --from=builder /home/dist/ /home/dist/
