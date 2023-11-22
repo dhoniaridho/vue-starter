@@ -107,7 +107,7 @@ export function useHttpMutation<TData = any, TError = any, TVariables = any>(
       return new Promise((resolve, reject) => {
         return http
           .request<TData>({
-            url,
+            url: unref(url),
             method: options.method,
             ...options.httpOptions,
             data: value
